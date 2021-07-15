@@ -1,0 +1,37 @@
+.fish-details {
+  .fish-name {
+    color: $primary-color;
+  }
+
+  .fish-info {
+    color: $secondary-color;
+  }
+
+  .more-info-btn {
+    @include theme-btn;
+  }
+}
+
+.modal {
+  h1 {
+    font-size: 25px;
+    color: $primary-color;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    @include flex;
+    justify-content: center;
+
+    button {
+      margin-right: 10px;
+      width: 50px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+//reset defaults
+p {
+  margin: 0;
+}
+
+//Mixins
+@import "Mixins/browsers";
+@import "Mixins/responsive";
+
+//Theme
+@import "Theme/theme";
+
+//Component Styles
+@import "ComponentStyles/Carousel";
+@import "ComponentStyles/FishDetails";
+@import "ComponentStyles/FishWidget";
+@import "ComponentStyles/Footer";
+@import "ComponentStyles/Header";
+@import "ComponentStyles/Modal";
+@import "ComponentStyles/Results";
+@import "ComponentStyles/SearchParams";
+
+//Custom Hook styles
+@import "HookStyles/useDropdown";
+
+button {
+  @include theme-btn;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+}
+
+.mainPageGrid {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+
+  .container {
+    margin-top: 20px;
+  }
+}
+
+.container {
+  width: -webkit-fill-available;
+  max-width: 1264px;
+  margin: 0 auto;
+  padding-right: 5%;
+  padding-left: 5%;
+}

@@ -1,0 +1,48 @@
+.carousel {
+  width: 525px;
+  margin-bottom: 20px;
+
+  .large-img {
+    width: 350px;
+    height: 200px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    object-fit: cover;
+
+    @include small-and-up {
+      width: 525px;
+      height: 300px;
+    }
+
+    @include xx-small {
+      width: calc(100vw - 70px);
+    }
+  }
+  .carousel-thumbnails {
+    display: flex;
+
+    button {
+      height: 80px;
+      background: unset;
+      border: unset;
+      padding: 0;
+      margin-right: 10px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    img {
+      cursor: pointer;
+      height: 80px;
+      max-width: 80px;
+      border-radius: 20px;
+      object-fit: cover;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}

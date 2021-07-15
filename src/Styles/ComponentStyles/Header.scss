@@ -1,0 +1,47 @@
+header {
+  @include flex;
+  height: 60px;
+  padding: 15px;
+  position: relative;
+
+  &:after {
+    content: "";
+    background-image: url("~/Images/rippling_water.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .animated-fish {
+    @include to-and-including-x-small {
+      display: none;
+    }
+  }
+
+  .logo-fish {
+    margin-right: 5px;
+
+    @include xx-small {
+      width: 100px;
+    }
+  }
+
+  .logo-name {
+    margin-top: -10px;
+    transform: rotate(5deg);
+
+    @include xx-small {
+      width: 200px;
+    }
+
+    @include x-small-and-up {
+      width: 250px;
+    }
+  }
+}

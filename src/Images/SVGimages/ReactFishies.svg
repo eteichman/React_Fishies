@@ -1,0 +1,15 @@
+<svg viewBox="0 0 144 25" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <path id="PathForReactFishiesText" fill="none" stroke="red"
+      d="m 4,20 
+         c 20,-10 35,-10 50,-7
+         s 30,10 55,10  30,-10 55,-15  " />
+  </defs>
+
+  <text font-family="Cooper Black" fill="#191970" stroke="#000000" stroke-width="0.4" >
+    <textPath href="#PathForReactFishiesText">REACT</textPath>
+    <textPath textLength="80px" startOffset="65" href="#PathForReactFishiesText">FISHIES</textPath>
+  </text>
+
+</svg>

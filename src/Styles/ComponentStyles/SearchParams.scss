@@ -1,0 +1,71 @@
+.search-params {
+  @include flex;
+  flex-direction: column;
+}
+
+.fishSearchForm {
+  @include flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  @include xx-small {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-label {
+    color: $primary-color;
+    font-weight: bold;
+    margin-right: 25px;
+    margin-bottom: 20px;
+
+    @include xx-small {
+      margin-right: 0;
+    }
+
+    p {
+      margin-bottom: 5px;
+    }
+
+    input {
+      border-color: $primary-color;
+      border-style: solid;
+      border-radius: 4px;
+      border-width: 2px;
+      color: $primary-color;
+      font-weight: bold;
+      height: 24px;
+
+      @include xx-small {
+        width: 192px;
+      }
+    }
+  }
+
+  .custom-dropdown {
+    @include xx-small {
+      width: 200px;
+      margin-right: 0;
+    }
+
+    select {
+      @include xx-small {
+        width: 200px;
+      }
+    }
+  }
+
+  .submit-btn {
+    width: 100px;
+    @include theme-btn;
+
+    @include xx-small {
+      width: 200px;
+    }
+  }
+}
+
+.fishSearchForm > * {
+  margin-bottom: 20px;
+}

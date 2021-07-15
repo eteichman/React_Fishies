@@ -1,0 +1,328 @@
+p {
+  margin: 0; }
+
+.carousel {
+  width: 525px;
+  margin-bottom: 20px; }
+  .carousel .large-img {
+    width: 350px;
+    height: 200px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    object-fit: cover; }
+    @media (min-width: 576px) {
+      .carousel .large-img {
+        width: 525px;
+        height: 300px; } }
+    @media (max-width: 449.98px) {
+      .carousel .large-img {
+        width: calc(100vw - 70px); } }
+  .carousel .carousel-thumbnails {
+    display: flex; }
+    .carousel .carousel-thumbnails button {
+      height: 80px;
+      background: unset;
+      border: unset;
+      padding: 0;
+      margin-right: 10px; }
+      .carousel .carousel-thumbnails button:last-of-type {
+        margin-right: 0; }
+    .carousel .carousel-thumbnails img {
+      cursor: pointer;
+      height: 80px;
+      max-width: 80px;
+      border-radius: 20px;
+      object-fit: cover; }
+      .carousel .carousel-thumbnails img:hover {
+        opacity: 0.9; }
+
+.fish-details .fish-name {
+  color: darkcyan; }
+
+.fish-details .fish-info {
+  color: cadetblue; }
+
+.fish-details .more-info-btn {
+  height: 30px;
+  border-radius: 4px;
+  border-color: darkcyan;
+  border-style: solid;
+  background-color: darkcyan;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer; }
+
+.modal h1 {
+  font-size: 25px;
+  color: darkcyan;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+.modal .buttons {
+  display: -webkit-box;
+  /* iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* IE 10 */
+  display: -webkit-flex;
+  /* Chrome */
+  display: flex;
+  /* Opera 12.1, Firefox 20+ */
+  justify-content: center; }
+  .modal .buttons button {
+    margin-right: 10px;
+    width: 50px; }
+    .modal .buttons button:last-of-type {
+      margin-right: 0; }
+
+.fish-widget img {
+  width: 100%;
+  height: 186px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 5px; }
+
+.fish-widget .fish-widget-link {
+  text-decoration: none;
+  color: darkcyan; }
+  .fish-widget .fish-widget-link:hover {
+    opacity: 0.9;
+    text-decoration: underline; }
+
+.fish-widget .fish-widget-name {
+  color: darkcyan;
+  margin-bottom: 5px;
+  margin-top: 0; }
+
+.fish-widget p {
+  color: cadetblue;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+footer {
+  margin-top: 75px;
+  color: cadetblue;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  height: 75px;
+  width: 100vw; }
+  footer .my-animated-div {
+    position: relative; }
+    footer .my-animated-div > img {
+      position: absolute; }
+
+header {
+  display: -webkit-box;
+  /* iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* IE 10 */
+  display: -webkit-flex;
+  /* Chrome */
+  display: flex;
+  /* Opera 12.1, Firefox 20+ */
+  height: 60px;
+  padding: 15px;
+  position: relative; }
+  header:after {
+    content: "";
+    background-image: url("~/Images/rippling_water.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
+  @media (max-width: 575.98px) {
+    header .animated-fish {
+      display: none; } }
+  header .logo-fish {
+    margin-right: 5px; }
+    @media (max-width: 449.98px) {
+      header .logo-fish {
+        width: 100px; } }
+  header .logo-name {
+    margin-top: -10px;
+    transform: rotate(5deg); }
+    @media (max-width: 449.98px) {
+      header .logo-name {
+        width: 200px; } }
+    @media (min-width: 450px) {
+      header .logo-name {
+        width: 250px; } }
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  outline: 0;
+  transition: opacity 0.15s linear; }
+  .modal .modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 25px;
+    border: 5px solid darkcyan;
+    width: 300px;
+    border-radius: 10px;
+    display: -webkit-box;
+    /* iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* IE 10 */
+    display: -webkit-flex;
+    /* Chrome */
+    display: flex;
+    /* Opera 12.1, Firefox 20+ */
+    flex-direction: column; }
+    .modal .modal-content .close {
+      align-self: flex-end;
+      font-size: 30px;
+      color: #cccccc;
+      margin-top: -15px;
+      margin-right: -5px;
+      background: none;
+      border: 0;
+      padding: 0; }
+
+.Fishies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(213px, 1fr));
+  grid-gap: 50px 30px; }
+
+.search-params {
+  display: -webkit-box;
+  /* iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* IE 10 */
+  display: -webkit-flex;
+  /* Chrome */
+  display: flex;
+  /* Opera 12.1, Firefox 20+ */
+  flex-direction: column; }
+
+.fishSearchForm {
+  display: -webkit-box;
+  /* iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* IE 10 */
+  display: -webkit-flex;
+  /* Chrome */
+  display: flex;
+  /* Opera 12.1, Firefox 20+ */
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 20px; }
+  @media (max-width: 449.98px) {
+    .fishSearchForm {
+      flex-direction: column;
+      align-items: flex-start; } }
+  .fishSearchForm .input-label {
+    color: darkcyan;
+    font-weight: bold;
+    margin-right: 25px;
+    margin-bottom: 20px; }
+    @media (max-width: 449.98px) {
+      .fishSearchForm .input-label {
+        margin-right: 0; } }
+    .fishSearchForm .input-label p {
+      margin-bottom: 5px; }
+    .fishSearchForm .input-label input {
+      border-color: darkcyan;
+      border-style: solid;
+      border-radius: 4px;
+      border-width: 2px;
+      color: darkcyan;
+      font-weight: bold;
+      height: 24px; }
+      @media (max-width: 449.98px) {
+        .fishSearchForm .input-label input {
+          width: 192px; } }
+  @media (max-width: 449.98px) {
+    .fishSearchForm .custom-dropdown {
+      width: 200px;
+      margin-right: 0; } }
+  @media (max-width: 449.98px) {
+    .fishSearchForm .custom-dropdown select {
+      width: 200px; } }
+  .fishSearchForm .submit-btn {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    border-color: darkcyan;
+    border-style: solid;
+    background-color: darkcyan;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer; }
+    @media (max-width: 449.98px) {
+      .fishSearchForm .submit-btn {
+        width: 200px; } }
+
+.fishSearchForm > * {
+  margin-bottom: 20px; }
+
+.custom-dropdown {
+  margin-right: 25px;
+  color: darkcyan;
+  font-weight: bold; }
+  .custom-dropdown p {
+    margin-bottom: 5px; }
+  .custom-dropdown select {
+    width: 155px;
+    border-radius: 4px;
+    height: 30px;
+    font-family: "Ubuntu", sans-serif;
+    border-color: darkcyan;
+    border-width: 2px;
+    color: darkcyan;
+    font-weight: bold;
+    cursor: pointer; }
+
+button {
+  height: 30px;
+  border-radius: 4px;
+  border-color: darkcyan;
+  border-style: solid;
+  background-color: darkcyan;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer; }
+  button:hover {
+    opacity: 0.8; }
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0; }
+
+.mainPageGrid {
+  display: grid;
+  grid-template-rows: 100px auto 50px; }
+  .mainPageGrid .container {
+    margin-top: 20px; }
+
+.container {
+  width: -webkit-fill-available;
+  max-width: 1264px;
+  margin: 0 auto;
+  padding-right: 5%;
+  padding-left: 5%; }

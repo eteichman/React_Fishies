@@ -1,0 +1,5 @@
+.Fishies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, (minmax(213px, 1fr)));
+  grid-gap: 50px 30px;
+}

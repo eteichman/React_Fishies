@@ -1,0 +1,15 @@
+footer {
+  margin-top: 75px;
+  color: $secondary-color;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  height: 75px;
+  width: 100vw;
+
+  .my-animated-div {
+    position: relative;
+    & > img {
+      position: absolute;
+    }
+  }
+}
